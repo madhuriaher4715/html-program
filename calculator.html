@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Calculator</title>
+    
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen">
+    <div class="calculator bg-white shadow-lg rounded-lg p-4">
+        <div class="mb-4">
+            <input id="display" type="text" class="w-full border border-gray-300 p-2 rounded-md text-right text-lg">
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick>7</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>8</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick>9</button>
+            <button class="bg-orange-500 text-white p-4 rounded-md border border-gray-300" onclick="setOperation('/')">/</button>
+
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>4</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>5</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>6</button>
+            <button class="bg-orange-500 text-white p-4 rounded-md border border-gray-300" onclick="setOperation('*')">*</button>
+
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>1</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>2</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>3</button>
+            <button class="bg-orange-500 text-white p-4 rounded-md border border-gray-300" onclick="setOperation('-')">-</button>
+
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300 col-span-2" onclick=>0</button>
+            <button class="bg-gray-100 p-4 rounded-md border border-gray-300" onclick=>.</button>
+            <button class="bg-orange-500 text-white p-4 rounded-md border border-gray-300" onclick="setOperation('+')">+</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
